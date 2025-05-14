@@ -7,9 +7,7 @@ import axios from 'axios'
 
 type Project = {
   id: number
-  name: string
-  about?: string
-  task?: string
+  title: string
 }
 
 export default function Home() {
@@ -27,10 +25,7 @@ export default function Home() {
       <ul className="space-y-4">
         {projects.map(project => (
           <li key={project.id} className="border rounded p-4 shadow">
-            <h2 className="text-xl font-semibold">{project.name}</h2>
-            {project.about && (
-              <p className="text-gray-600">{project.task}</p>
-            )}
+            <h2 className="text-xl font-semibold">{project.title}</h2>
           </li>
         ))}
       </ul>

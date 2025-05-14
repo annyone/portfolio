@@ -11,37 +11,25 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
+    "title": {
       "type": "string"
     },
-    "about": {
+    "description": {
       "type": "text"
     },
     "product": {
       "type": "string"
     },
-    "task": {
-      "type": "json"
-    },
     "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "screenshoots": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }
